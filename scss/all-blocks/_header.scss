@@ -1,0 +1,63 @@
+.header {
+    padding-top: 35px;
+    z-index: 10;
+    .header__container {
+        display: flex;
+        align-items: center;
+        z-index: 10;
+    }
+
+    .sitenav {
+        margin-left: 283px;
+    }
+
+    .sitenav__list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .sitenav__item + .sitenav__item {
+        margin-left: 41px;
+    }
+
+    .sitenav__link {
+        font-family: "Gilroy";
+        font-weight: 400;
+        font-size: 15.75px;
+        line-height: 18px;
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+    .header__tel {
+        display: flex;
+
+        flex-direction: column;
+        position: relative;
+        margin-left: 125px;
+    }
+
+    .header__tel::before {
+        position: absolute;
+        left: -40px;
+        top: -2px;
+        content: "";
+        width: 33px;
+        height: 33px;
+        background-image: url("../../img/tel-icon.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .header__tel-info {
+        font-family: "Zona Pro";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13.5px;
+        line-height: 15px;
+        text-decoration: none;
+        color: #037b35;
+    }
+}
